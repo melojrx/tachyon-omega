@@ -70,7 +70,7 @@ export const Location = () => {
                             allowFullScreen
                             referrerPolicy="no-referrer-when-downgrade"
                             title="Localização Brabu's Conveniência"
-                            src="https://maps.google.com/maps?q=Rua%20Ant%C3%B4nio%20Lopes%2C%20571%20-%20Conjunto%20Cohab%20-%20Aracoiaba%20-%20CE&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            src="https://maps.google.com/maps?q=Rua%20Ant%C3%B4nio%20Lopes%2C%20571%2C%20Aracoiaba%2C%20Cear%C3%A1&t=&z=15&ie=UTF8&iwloc=B&output=embed"
                             onLoad={() => setIsMapLoaded(true)}
                             className="absolute inset-0 w-full h-full object-cover"
                         >

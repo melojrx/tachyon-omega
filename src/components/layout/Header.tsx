@@ -120,16 +120,20 @@ export const Header = () => {
                         </button>
                     ))}
                 </nav>
-                <div className="flex flex-col gap-4 w-64 mt-4">
+                <div className="flex flex-col gap-4 w-full max-w-xs px-4 mt-auto mb-12">
                     <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="w-full">
-                        <Button size="lg" variant="whatsapp" className="w-full gap-2 shadow-lg">
-                            <WhatsAppIcon size={20} />
+                        <Button size="lg" variant="whatsapp" className="w-full gap-2 shadow-lg h-14 text-lg">
+                            <WhatsAppIcon size={24} />
                             Fazer Pedido
                         </Button>
                     </a>
                     <a href={getInstagramLink()} target="_blank" rel="noopener noreferrer" className="w-full">
-                        <Button size="lg" variant="outline" className="w-full gap-2 border-white/20 text-white">
-                            <Instagram size={20} />
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="w-full gap-2 h-14 text-lg border-white/20 text-white hover:bg-gradient-to-tr hover:from-purple-500 hover:to-pink-500 hover:border-transparent transition-all duration-300"
+                        >
+                            <Instagram size={24} />
                             Ver Instagram
                         </Button>
                     </a>
