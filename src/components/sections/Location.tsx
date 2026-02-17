@@ -40,7 +40,7 @@ export const Location = () => {
                         <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-[80%] pointer-events-none group">
                             <div className="relative">
                                 <div className="w-16 h-16 bg-brand-darker rounded-full border-4 border-brand-gold shadow-[0_0_20px_rgba(251,191,36,0.4)] flex items-center justify-center overflow-hidden relative z-10">
-                                    <img src="/src/assets/brabus_logo.jpeg" alt="Brabu's" className="w-full h-full object-cover" />
+                                    <img src="/brabus_logo.jpeg" alt="Brabu's" className="w-full h-full object-cover" />
                                 </div>
                                 {/* Pin Triangle */}
                                 <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[14px] border-t-brand-gold"></div>

@@ -51,7 +51,7 @@ export const Header = () => {
                     {/* Logo Placeholder (Image or Text) */}
                     <div className="relative w-10 h-10 overflow-hidden rounded-full border border-brand-gold/30 group-hover:border-brand-gold transition-colors">
                         <img
-                            src="/src/assets/brabus_logo.jpeg"
+                            src="/brabus_logo.jpeg"
                             alt="Brabu's Logo"
                             className="w-full h-full object-cover"
                             onError={(e) => {

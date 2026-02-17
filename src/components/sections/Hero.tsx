@@ -34,7 +34,7 @@ export const Hero = () => {
 
                     <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-brand-gold/30 overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.15)] bg-black">
                         <img
-                            src="/src/assets/brabus_logo.jpeg"
+                            src="/brabus_logo.jpeg"
                             alt="Brabu's Logo"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                             onError={(e) => {
