@@ -2,7 +2,7 @@ export const siteConfig = {
     storeName: "Brabu’s Conveniência & Tabacaria",
     tagline: "Copões, cervejas, petiscos e tudo que salva a larica 😋",
     whatsappNumber: "558596657969", // 55 + DDD + número (somente dígitos)
-    whatsappMessage: "Oi! Quero fazer um pedido 😊",
+    whatsappMessage: "Oi! Quero fazer um pedido 💀🔥",
     instagramUrl: "https://www.instagram.com/brabus_conveniencia/",
     addressText: "Rua Antônio Lopes, 571 — Conjunto Cohab — Aracoiaba — CE",
     googleMapsUrl:
