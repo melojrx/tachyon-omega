@@ -5,6 +5,18 @@
 
 Premium landing page for **Brabu's Conveniência & Tabacaria** — a modern convenience store and tobacco shop in Aracoiaba, CE. Built with cutting-edge web technologies to deliver a fast, responsive, and stunning user experience.
 
+[**🌐 Live Demo**](https://brabusconveniencia.vercel.app/)
+
+---
+
+## 📱 App Preview
+
+<p align="center">
+  <img src="public/Screenshot01.png" alt="Mobile View" width="45%">
+  &nbsp; &nbsp;
+  <img src="public/Screenshot02.png" alt="Desktop View" width="45%">
+</p>
+
 ---
 
 ## ✨ Features
