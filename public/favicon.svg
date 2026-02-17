@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Mousse/Foam -->
+  <path d="M12 16C12 11 16 8 20 8C22 8 24 9 25 10C26 7 29 5 32 5C35 5 38 7 39 10C40 9 42 8 44 8C48 8 52 11 52 16L52 20L12 20L12 16Z" fill="#FFFFFF"/>
+  
+  <!-- Mug Body -->
+  <path d="M14 20H50V50C50 54.4183 46.4183 58 42 58H22C17.5817 58 14 54.4183 14 50V20Z" fill="#FBBF24"/>
+  
+  <!-- Mug Handle -->
+  <path d="M50 24H54C56.2091 24 58 25.7909 58 28V42C58 44.2091 56.2091 46 54 46H50" stroke="#FBBF24" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Glass Details/Reflections -->
+  <rect x="18" y="24" width="4" height="28" rx="2" fill="#D97706" opacity="0.4"/>
+  <rect x="26" y="24" width="4" height="28" rx="2" fill="#D97706" opacity="0.4"/>
+  <rect x="34" y="24" width="4" height="28" rx="2" fill="#D97706" opacity="0.4"/>
+  <rect x="42" y="24" width="4" height="28" rx="2" fill="#D97706" opacity="0.4"/>
+</svg>
