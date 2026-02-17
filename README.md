@@ -12,9 +12,7 @@ Premium landing page for **Brabu's Conveniência & Tabacaria** — a modern conv
 ## 📱 App Preview
 
 <p align="center">
-  <img src="public/Screenshot01.png" alt="Mobile View" width="45%">
-  &nbsp; &nbsp;
-  <img src="public/Screenshot02.png" alt="Desktop View" width="45%">
+  <img src="public/Screenshot.png" alt="App Preview" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
 </p>
 
 ---
