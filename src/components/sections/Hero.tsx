@@ -1,10 +1,12 @@
+import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { getInstagramLink, getWhatsAppLink } from "../../lib/links";
-import { Instagram } from "lucide-react";
+import { Instagram, Volume2, VolumeX } from "lucide-react";
 import { WhatsAppIcon } from "../ui/Icons";
 
 export const Hero = () => {
+    const [isMuted, setIsMuted] = useState(true);
     return (
         <section
             id="hero"
@@ -20,37 +22,40 @@ export const Hero = () => {
             <div className="container-custom relative z-10 flex flex-col items-center">
 
                 {/* 1. Badge at Top */}
-                <div className="mb-8 animate-fade-in-up">
+                <div className="mb-10 animate-fade-in-up">
                     <Badge variant="gold" className="px-4 py-1.5 flex items-center gap-2 uppercase tracking-widest text-xs font-bold bg-brand-dark/50 border border-brand-gold text-brand-gold shadow-[0_0_15px_rgba(251,191,36,0.2)]">
                         <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                         Aberto Agora • Entrega Rápida
                     </Badge>
                 </div>
 
-                {/* 2. Central Large Logo */}
-                <div className="mb-10 relative animate-float">
+                {/* 2. Central Large Logo (Video) */}
+                <div className="mb-12 relative animate-float group">
                     {/* Glow effect behind logo */}
                     <div className="absolute inset-0 bg-brand-gold/20 rounded-full blur-2xl transform scale-110" />
 
                     <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-brand-gold/30 overflow-hidden shadow-[0_0_50px_rgba(251,191,36,0.15)] bg-black">
-                        <img
-                            src="/brabus_logo.jpeg"
-                            alt="Brabu's Logo"
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                            onError={(e) => {
-                                // Fallback if image fails
-                                e.currentTarget.style.display = 'none';
-                                e.currentTarget.parentElement?.classList.add('flex', 'items-center', 'justify-center');
-                                if (e.currentTarget.parentElement) {
-                                    e.currentTarget.parentElement.innerHTML = `
-                            <div class="flex flex-col items-center justify-center text-brand-gold">
-                                <span class="text-6xl mb-2">💀</span>
-                                <span class="font-heading font-bold text-2xl tracking-tighter">BRABU'S</span>
-                            </div>
-                        `;
-                                }
-                            }}
-                        />
+                        <video
+                            autoPlay
+                            loop
+                            muted={isMuted}
+                            playsInline
+                            poster="/brabus_logo.jpeg"
+                            className="w-full h-full object-cover scale-110"
+                        >
+                            <source src="/hero_logo_animation.mp4" type="video/mp4" />
+                            {/* Fallback */}
+                            <img src="/brabus_logo.jpeg" alt="Brabu's Logo" className="w-full h-full object-cover" />
+                        </video>
+
+                        {/* Audio Toggle */}
+                        <button
+                            onClick={() => setIsMuted(!isMuted)}
+                            className="absolute bottom-6 left-1/2 -translate-x-1/2 w-10 h-10 bg-black/50 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-brand-gold hover:text-brand-darker transition-all duration-300 z-20 group-hover:opacity-100 opacity-0 md:opacity-100 transition-opacity"
+                            aria-label={isMuted ? "Ativar som" : "Desativar som"}
+                        >
+                            {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+                        </button>
                     </div>
                 </div>
 
