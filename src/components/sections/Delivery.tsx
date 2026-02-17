@@ -1,26 +1,25 @@
 
 import { SectionTitle } from "../ui/SectionTitle";
 import { siteConfig } from "../../config/site";
-import { MessageCircle, ShoppingBag, Truck } from "lucide-react";
+import { ShoppingBag, Truck, ShoppingCart } from "lucide-react";
 import { Button } from "../ui/Button";
-import { getWhatsAppLink } from "../../lib/links";
 
 export const Delivery = () => {
     const steps = [
         {
             icon: ShoppingBag,
-            title: "1. Escolha",
-            description: "Confira nosso cardápio no Instagram ou peça sugestões.",
+            title: "1. Escolha seus Produtos",
+            description: "Navegue pelo nosso catálogo completo com fotos e preços atualizados.",
         },
         {
-            icon: MessageCircle,
-            title: "2. Chame",
-            description: "Mande um zap com seu pedido e endereço de entrega.",
+            icon: ShoppingCart,
+            title: "2. Finalize o Pedido",
+            description: "Monte seu carrinho e faça o pagamento direto pela plataforma (Pix ou Cartão).",
         },
         {
             icon: Truck,
-            title: "3. Receba",
-            description: "Relaxe que a gente leva tudo geladinho até você.",
+            title: "3. Receba em Casa",
+            description: "Acompanhe e aguarde. Entregamos rapidinho na sua porta.",
         },
     ];
 
@@ -55,9 +54,9 @@ export const Delivery = () => {
                         </span>
                     </div>
                     <div className="mt-8">
-                        <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
-                            <Button variant="outline" className="border-brand-gold/50 text-brand-gold hover:bg-brand-gold hover:text-brand-darker">
-                                Consultar Taxa de Entrega
+                        <a href="https://brabus.kyte.site/pt-BR" target="_blank" rel="noopener noreferrer">
+                            <Button size="lg" className="px-8 h-12 text-base font-bold bg-brand-gold text-brand-darker hover:bg-brand-light">
+                                Fazer Pedido Online
                             </Button>
                         </a>
                     </div>

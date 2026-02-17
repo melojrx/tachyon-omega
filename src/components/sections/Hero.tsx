@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { getInstagramLink, getWhatsAppLink } from "../../lib/links";
-import { Instagram, Volume2, VolumeX } from "lucide-react";
+import { Instagram, Volume2, VolumeX, ShoppingCart } from "lucide-react";
 import { WhatsAppIcon } from "../ui/Icons";
 
 export const Hero = () => {
@@ -71,6 +71,21 @@ export const Hero = () => {
 
                 {/* 4. Action Buttons */}
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+
+                    <a
+                        href="https://brabus.kyte.site/pt-BR"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:w-auto"
+                    >
+                        <Button
+                            size="lg"
+                            className="w-full sm:w-auto min-w-[240px] h-14 text-base tracking-wide uppercase shadow-lg bg-brand-gold text-brand-darker hover:bg-brand-light font-bold"
+                        >
+                            <ShoppingCart size={20} className="mr-2" />
+                            Pedir Online
+                        </Button>
+                    </a>
 
                     <a
                         href={getWhatsAppLink()}

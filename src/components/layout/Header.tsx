@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Instagram } from "lucide-react";
+import { Menu, X, Instagram, ShoppingBag } from "lucide-react";
 import { Button } from "../ui/Button";
 import { cn } from "../../lib/utils";
 import { getWhatsAppLink, getInstagramLink } from "../../lib/links";
@@ -83,9 +83,9 @@ export const Header = () => {
 
                 {/* Desktop CTA */}
                 <div className="hidden lg:block">
-                    <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
-                        <Button size="sm" variant="whatsapp" className="gap-2">
-                            <WhatsAppIcon size={16} />
+                    <a href="https://brabus.kyte.site/pt-BR" target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" className="gap-2 bg-brand-gold text-brand-darker hover:bg-brand-light font-bold">
+                            <ShoppingBag size={16} />
                             Pedir Agora
                         </Button>
                     </a>
