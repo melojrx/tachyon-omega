@@ -1,0 +1,8 @@
+# robots.txt - Brabu's Conveniência & Tabacaria
+# https://brabusconveniencia.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://brabusconveniencia.vercel.app/sitemap.xml

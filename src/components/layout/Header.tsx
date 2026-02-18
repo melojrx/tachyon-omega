@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Menu, X, Instagram, ShoppingBag } from "lucide-react";
 import { Button } from "../ui/Button";
 import { cn } from "../../lib/utils";
 import { getWhatsAppLink, getInstagramLink } from "../../lib/links";
-import { scrollToSection } from "../../lib/scroll";
 import { WhatsAppIcon } from "../ui/Icons";
+import { appRoutes } from "../../router/routes";
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,19 +20,11 @@ export const Header = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const navItems = [
-        { label: "Início", id: "hero" },
-        { label: "Destaques", id: "highlights" },
-        { label: "Promoções", id: "promos" },
-        { label: "Entregas", id: "delivery" },
-        { label: "Horários", id: "hours" },
-        { label: "Localização", id: "location" },
-        { label: "Contato", id: "contact" },
-    ];
+    const navItems = appRoutes.map((r) => ({ label: r.label, path: r.path }));
 
-    const handleNavClick = (id: string) => {
+    const handleNavClick = (path: string) => {
         setIsOpen(false);
-        scrollToSection(id);
+        navigate(path);
     };
 
     return (
@@ -72,8 +66,8 @@ export const Header = () => {
                 <nav className="hidden lg:flex items-center gap-6">
                     {navItems.map((item) => (
                         <button
-                            key={item.id}
-                            onClick={() => handleNavClick(item.id)}
+                            key={item.path}
+                            onClick={() => handleNavClick(item.path)}
                             className="text-brand-light hover:text-brand-gold text-sm font-medium transition-colors uppercase tracking-wide"
                         >
                             {item.label}
@@ -112,8 +106,8 @@ export const Header = () => {
                 <nav className="flex flex-col items-center gap-6 w-full">
                     {navItems.map((item) => (
                         <button
-                            key={item.id}
-                            onClick={() => handleNavClick(item.id)}
+                            key={item.path}
+                            onClick={() => handleNavClick(item.path)}
                             className="text-2xl font-heading font-bold text-white hover:text-brand-gold transition-colors w-full text-center py-2 active:bg-white/5"
                         >
                             {item.label}

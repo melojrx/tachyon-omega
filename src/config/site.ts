@@ -6,7 +6,7 @@ export const siteConfig = {
     instagramUrl: "https://www.instagram.com/brabus_conveniencia/",
     addressText: "Rua Antônio Lopes, 571 — Conjunto Cohab — Aracoiaba — CE",
     googleMapsUrl:
-        "https://www.google.com/maps/search/?api=1&query=Rua%20Ant%C3%B4nio%20Lopes%2C%20571%20-%20Conjunto%20Cohab%20-%20Aracoiaba%20-%20CE",
+        "https://www.google.com/maps/search/?api=1&query=-4.3710409474311325,-38.8084505779096",
 
     openingHours: [
         { day: "Segunda", hours: "16:00 - 00:00" },

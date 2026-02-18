@@ -1,15 +1,170 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brabu's Conveniência & Tabacaria</title>
+
+  <!-- ===================== -->
+  <!--  IDENTIDADE DA PÁGINA -->
+  <!-- ===================== -->
+  <title>Brabu's Conveniência & Tabacaria | Aracoiaba - CE</title>
+  <meta name="description" content="Conveniência e tabacaria em Aracoiaba-CE. Cervejas geladas, copões, petiscos, delivery via WhatsApp. Aberto até tarde. Rua Antônio Lopes, 571 — Cohab." />
+  <meta name="keywords" content="conveniência aracoiaba, tabacaria aracoiaba, cervejas geladas aracoiaba, delivery bebidas aracoiaba, conveniência cohab aracoiaba, loja de conveniência ce, brabu's" />
+  <meta name="author" content="Brabu's Conveniência & Tabacaria" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#D4A017" />
+  <link rel="canonical" href="https://brabusconveniencia.vercel.app/" />
+
+  <!-- ===================== -->
+  <!--  GOOGLE SEARCH CONSOLE-->
+  <!-- ===================== -->
+  <meta name="google-site-verification" content="V2-9WEdQA7EJ5nPMbtweoNZlGG2y8BaSWQ1O7vwUQdI" />
+
+  <!-- ===================== -->
+  <!--  FAVICONS             -->
+  <!-- ===================== -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <!-- ===================== -->
+  <!--  OPEN GRAPH           -->
+  <!-- (WhatsApp, Facebook)  -->
+  <!-- ===================== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://brabusconveniencia.vercel.app/" />
+  <meta property="og:site_name" content="Brabu's Conveniência & Tabacaria" />
+  <meta property="og:title" content="Brabu's Conveniência & Tabacaria | Aracoiaba - CE" />
+  <meta property="og:description" content="Cervejas geladas, copões, petiscos e tabacaria em Aracoiaba-CE. Delivery via WhatsApp. Aberto até tarde!" />
+  <meta property="og:image" content="https://brabusconveniencia.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Brabu's Conveniência e Tabacaria em Aracoiaba-CE" />
+
+  <!-- ===================== -->
+  <!--  TWITTER CARD         -->
+  <!-- ===================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Brabu's Conveniência & Tabacaria | Aracoiaba - CE" />
+  <meta name="twitter:description" content="Cervejas geladas, copões, petiscos e tabacaria em Aracoiaba-CE. Delivery via WhatsApp. Aberto até tarde!" />
+  <meta name="twitter:image" content="https://brabusconveniencia.vercel.app/og-image.png" />
+
+  <!-- ===================== -->
+  <!--  GEO / LOCAL SEO      -->
+  <!-- ===================== -->
+  <meta name="geo.region" content="BR-CE" />
+  <meta name="geo.placename" content="Aracoiaba, Ceará, Brasil" />
+  <meta name="geo.position" content="-4.3710409474311325;-38.8084505779096" />
+  <meta name="ICBM" content="-4.3710409474311325, -38.8084505779096" />
+
+  <!-- ===================== -->
+  <!--  PERFORMANCE          -->
+  <!-- ===================== -->
+
+  <!-- Preload do poster/logo do Hero (LCP crítico) -->
+  <link rel="preload" href="/brabus_logo.jpeg" as="image" type="image/jpeg" fetchpriority="high" />
+
+  <!-- Preconnect para recursos externos usados na página -->
+  <link rel="preconnect" href="https://www.google.com" />
+  <link rel="preconnect" href="https://maps.googleapis.com" />
+  <link rel="preconnect" href="https://maps.google.com" />
+  <link rel="dns-prefetch" href="https://www.instagram.com" />
+  <link rel="dns-prefetch" href="https://wa.me" />
+  <link rel="dns-prefetch" href="https://brabus.kyte.site" />
+
+  <!-- ===================== -->
+  <!--  STRUCTURED DATA      -->
+  <!--  (JSON-LD / Schema)   -->
+  <!-- ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ConvenienceStore",
+    "name": "Brabu's Conveniência & Tabacaria",
+    "description": "Conveniência e tabacaria em Aracoiaba-CE. Cervejas geladas, copões, petiscos e delivery via WhatsApp.",
+    "url": "https://brabusconveniencia.vercel.app/",
+    "telephone": "+55-85-9665-7969",
+    "image": "https://brabusconveniencia.vercel.app/og-image.png",
+    "priceRange": "$$",
+    "currenciesAccepted": "BRL",
+    "paymentAccepted": "Dinheiro, Pix",
+    "servesCuisine": "Bebidas, Petiscos",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Antônio Lopes, 571",
+      "addressLocality": "Aracoiaba",
+      "addressRegion": "CE",
+      "postalCode": "62750-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -4.3710409474311325,
+      "longitude": -38.8084505779096
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday"],
+        "opens": "16:00",
+        "closes": "00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday", "Thursday"],
+        "opens": "16:00",
+        "closes": "02:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "16:00",
+        "closes": "04:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "14:00",
+        "closes": "04:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "14:00",
+        "closes": "00:00"
+      }
+    ],
+    "hasMap": "https://maps.app.goo.gl/mS3wLDf1GsEcUzMs7",
+    "sameAs": [
+      "https://www.instagram.com/brabus_conveniencia/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-85-9665-7969",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese",
+      "contactOption": "TollFree"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Aracoiaba",
+      "containedIn": {
+        "@type": "State",
+        "name": "Ceará"
+      }
+    }
+  }
+  </script>
 </head>
 
 <body>
-  <div id="root"></div>
+  <!--
+    ⚠️  NÃO remova o comentário abaixo.
+    O script de pre-rendering injeta o HTML estático aqui durante o build SSG.
+    Em dev, o React hidrata normalmente a div vazia.
+  -->
+  <div id="root"><!--app-html--></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
